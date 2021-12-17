@@ -56,7 +56,7 @@ $(".dropdown").click(function(){
     <div class="faq-content">
       <h1>FAQ</h1>
       <div class="dropdown1">
-        <span class="show">How many team members can I invite?</span>
+        <button class="show" onclick="mostrarOcultar()">How many team members can I invite?</button>
         <img src="./images/icon-arrow-down.svg" alt="flecha">
         <ul class="showText">
           <li >You can invite up to 2 additional users on the Free plan. There is no limit on 
@@ -65,7 +65,7 @@ $(".dropdown").click(function(){
       </div>
       <hr>
       <div class="dropdown2">
-        <span class="show">What is the maximum file upload size?</span>
+        <button class="show" onclick="mostrarOcultar()">What is the maximum file upload size?</button>
         <img src="./images/icon-arrow-down.svg" alt="flecha">
         <ul class="showText">
           <li>No more than 2GB. All files in your account must fit your allotted storage space.</li>
@@ -73,7 +73,7 @@ $(".dropdown").click(function(){
       </div>
       <hr>
       <div class="dropdown3">
-        <span class="show">How do I reset my password?</span>
+        <button class="show" onclick="mostrarOcultar()">How do I reset my password?</button>
         <img src="./images/icon-arrow-down.svg" alt="flecha">
         <ul class="showText">
           <li>Click “Forgot password” from the login page or “Change password” from your profile page.
@@ -82,7 +82,7 @@ $(".dropdown").click(function(){
       </div>
       <hr>
       <div class="dropdown4">
-        <span class="show">Can I cancel my subscription?</span>
+        <button class="show" onclick="mostrarOcultar()">Can I cancel my subscription?</button>
         <img src="./images/icon-arrow-down.svg" alt="flecha">
         <ul class="showText">
           <li >Yes! Send us a message and we’ll process your request no questions asked.</li>
@@ -90,9 +90,9 @@ $(".dropdown").click(function(){
       </div>
       <hr>
       <div class="dropdown5">
-        <span class="show">Do you provide additional support?</span>
-        <img src="./images/icon-arrow-down.svg" alt="flecha">
-        <ul class="showText">
+        <button class="show">Do you provide additional support?</button>
+        <img src="./images/icon-arrow-down.svg" onclick="arrowRotate()" id="arrow" alt="flecha">
+        <ul class="showText" id="ultimo">
           <li>Chat and email support is available 24/7. Phone lines are open during normal business hours.</li>
         </ul>
       </div>
@@ -108,7 +108,5 @@ $(".dropdown").click(function(){
   </div>
   </footer>
   <script src="./script.js"></script>
-
-  <!-- onclick="toggleText()" -->
 </body>
 </html>

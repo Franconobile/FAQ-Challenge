@@ -33,9 +33,6 @@ body {
 
 /* Mobile First */
 
-.mostar{
-    display: block;
-}
 
 
 h1 {
@@ -44,7 +41,7 @@ h1 {
     text-align: center;
 }
 
-span {
+button {
     color: var(--very-dark-grayish-blue);
     padding-bottom: 2vh;
     cursor: pointer;
@@ -133,8 +130,17 @@ hr {
     transform: translateY(2vh) scale(1.3);
 }
 
-ul {
-    display: none;
+button{
+    background: none;
+    color: var(--very-dark-grayish-blue);
+    cursor: pointer;
+    padding: 5px;
+    width: 90%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 12px;
+    transition: 0.4s;
 }
 
 
